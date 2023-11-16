@@ -50,7 +50,7 @@ W3CWebDriverの標準機能のリストは次のとおりです。
 それらを `cloud:options` ブロックでラップする必要があります（適切なプレフィックスについては、クラウドベンダーに確認してください）。
 
 #### Before 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 DesiredCapabilities caps = DesiredCapabilities.firefox();
 caps.setCapability("platform", "Windows 10");
@@ -96,7 +96,7 @@ driver = webdriver.Remote(cloud_url, desired_capabilities=caps)
 {{< /tabpane >}}
 
 #### After
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 FirefoxOptions browserOptions = new FirefoxOptions();
 browserOptions.setPlatformName("Windows 10");

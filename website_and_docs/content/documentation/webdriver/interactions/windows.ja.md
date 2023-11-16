@@ -16,7 +16,7 @@ WebDriverは、ウィンドウとタブを区別しません。
 各ウィンドウには一意の識別子があり、これは単一のセッションで持続します。
 次のコードを使用して、現在のウィンドウのウィンドウハンドルを取得できます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.getWindowHandle();{{< /tab >}}
   {{< tab header="Python" >}}driver.current_window_handle{{< /tab >}}
   {{< tab header="CSharp" >}}driver.CurrentWindowHandle;{{< /tab >}}
@@ -33,7 +33,7 @@ WebDriverは、ウィンドウとタブを区別しません。
 
 ただし、Selenium 4には、新しいタブ（または）新しいウィンドウを作成して自動的に切り替える新しいAPI [NewWindow](#新しいウィンドウまたは新しいタブを作成して切り替える) が用意されています。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Store the ID of the original window
 String originalWindow = driver.getWindowHandle();
@@ -203,7 +203,7 @@ wait.until(titleIs("Selenium documentation"))
 
 __注意: この機能は、Selenium 4以降のバージョンで機能します。__
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Opens a new tab and switches to new tab
 driver.switchTo().newWindow(WindowType.TAB);
@@ -258,7 +258,7 @@ driver.switchTo().newWindow(WindowType.WINDOW)
 前のセクションのコードサンプルに従ったと仮定すると、変数に前のウィンドウハンドルが格納されます。
 これをまとめると以下のようになります。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Close the tab or window
 driver.close();
@@ -310,7 +310,7 @@ driver.switchTo().window(originalWindow)
 
 ブラウザーセッションを終了したら、closeではなく、quitを呼び出す必要があります。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.quit();{{< /tab >}}
   {{< tab header="Python" >}}driver.quit(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Quit();{{< /tab >}}
@@ -329,7 +329,7 @@ quitの呼び出しに失敗すると、余分なバックグラウンドプロ�
 
 一部のテストフレームワークでは、テストの終了時にフックできるメソッドとアノテーションを提供しています。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 /**
  * Example using JUnit
@@ -388,7 +388,7 @@ fun tearDown() {
 
 テストコンテキストでWebDriverを実行していない場合は、ほとんどの言語で提供されている `try  / finally` の使用を検討して、例外がWebDriverセッションをクリーンアップするようにします。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 try {
     //WebDriver code here...
@@ -450,7 +450,7 @@ with webdriver.Firefox() as driver:
 
 ブラウザーウィンドウのサイズをピクセル単位で取得します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Access each dimension individually
 int width = driver.manage().window().getSize().getWidth();
@@ -516,7 +516,7 @@ val height1 = size.height
 
 ウィンドウを復元し、ウィンドウサイズを設定します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.manage().window().setSize(new Dimension(1024, 768));{{< /tab >}}
   {{< tab header="Python" >}}driver.set_window_size(1024, 768){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Manage().Window.Size = new Size(1024, 768);{{< /tab >}}
@@ -529,7 +529,7 @@ val height1 = size.height
 
 ブラウザーウィンドウの左上の座標を取得します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Access each dimension individually
 int x = driver.manage().window().getPosition().getX();
@@ -596,7 +596,7 @@ val y1 = position.y
 
 選択した位置にウィンドウを移動します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Move the window to the top left of the primary monitor
 driver.manage().window().setPosition(new Point(0, 0));
@@ -626,7 +626,7 @@ driver.manage().window().position = Point(0,0)
 
 ウィンドウを拡大します。ほとんどのオペレーティングシステムでは、オペレーティングシステムのメニューとツールバーをブロックすることなく、ウィンドウが画面いっぱいに表示されます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.manage().window().maximize();{{< /tab >}}
   {{< tab header="Python" >}}driver.maximize_window(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Manage().Window.Maximize();{{< /tab >}}
@@ -643,7 +643,7 @@ driver.manage().window().position = Point(0,0)
 
 __注：この機能は、Selenium 4以降のバージョンで機能します。__
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.manage().window().minimize();{{< /tab >}}
   {{< tab header="Python" >}}driver.minimize_window(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Manage().Window.Minimize();{{< /tab >}}
@@ -656,7 +656,7 @@ __注：この機能は、Selenium 4以降のバージョンで機能します�
 
 ほとんどのブラウザーでF11を押すのと同じように、画面全体に表示されます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.manage().window().fullscreen();{{< /tab >}}
   {{< tab header="Python" >}}driver.fullscreen_window(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Manage().Window.FullScreen();{{< /tab >}}
@@ -671,7 +671,7 @@ __注：この機能は、Selenium 4以降のバージョンで機能します�
 WebDriver エンドポイントの [スクリーンショット](https://www.w3.org/TR/webdriver/#dfn-take-screenshot) は、
 Base64 形式でエンコードされたスクリーンショットを返します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -762,7 +762,7 @@ fun main(){
 WebDriver エンドポイントの [スクリーンショット](https://www.w3.org/TR/webdriver/#dfn-take-screenshot) は、
 Base64 形式でエンコードされたスクリーンショットを返します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -864,7 +864,7 @@ fun main() {
 
 選択したフレームまたはウィンドウの現在のコンテキストで、JavaScript コードスニペットを実行します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     //Creating the JavascriptExecutor interface object by Type casting
       JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -934,7 +934,7 @@ driver.executeScript("alert('hello world')")
 _Note: Chromium ブラウザがヘッドレスモードである必要があります。_
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     import org.openqa.selenium.print.PrintOptions;
 

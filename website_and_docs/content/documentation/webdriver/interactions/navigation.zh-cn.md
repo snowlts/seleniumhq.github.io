@@ -11,7 +11,7 @@ aliases: [
 
 启动浏览器后你要做的第一件事就是打开你的网站。这可以通过一行代码实现:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 简便的方法
 driver.get("https://selenium.dev");
@@ -48,7 +48,7 @@ driver.navigate().to("https://selenium.dev")
 
 按下浏览器的后退按钮:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.navigate().back();{{< /tab >}}
 {{< tab header="Python" >}}driver.back(){{< /tab >}}
 {{< tab header="CSharp" >}}driver.Navigate().Back();{{< /tab >}}
@@ -60,7 +60,7 @@ driver.navigate().to("https://selenium.dev")
 ## 前进
 按下浏览器的前进键:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.navigate().forward();{{< /tab >}}
 {{< tab header="Python" >}}driver.forward(){{< /tab >}}
 {{< tab header="CSharp" >}}driver.Navigate().Forward();{{< /tab >}}
@@ -72,7 +72,7 @@ driver.navigate().to("https://selenium.dev")
 ## 刷新
 刷新当前页面:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.navigate().refresh();{{< /tab >}}
 {{< tab header="Python" >}}driver.refresh(){{< /tab >}}
 {{< tab header="CSharp" >}}driver.Navigate().Refresh();{{< /tab >}}

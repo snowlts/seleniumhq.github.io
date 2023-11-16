@@ -18,7 +18,7 @@ aliases: [
 
 まず、クラスをインポートする必要があります。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.support.Color;
   {{< /tab >}}
@@ -41,7 +41,7 @@ include Selenium::WebDriver::Support
 すべての色オブジェクトは、色の文字列表現から作成する必要があります。
 サポートされている色表現は、以下のとおりです。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color HEX_COLOUR = Color.fromString("#2F7ED8");
 private final Color RGB_COLOUR = Color.fromString("rgb(255, 255, 255)");
@@ -88,7 +88,7 @@ private val HSLA_COLOUR = Color.fromString("hsla(100, 0%, 50%, 0.5)")
 
 Colorクラスは、 [http://www.w3.org/TR/css3-color/#html4](//www.w3.org/TR/css3-color/#html4) で指定されているすべての基本色定義もサポートしています。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color BLACK = Color.fromString("black");
 private final Color CHOCOLATE = Color.fromString("chocolate");
@@ -120,7 +120,7 @@ private val HOTPINK = Color.fromString("hotpink")
 要素に色が設定されていない場合、ブラウザは "透明" の色の値を返すことがあります。
 Colorクラスもこれをサポートしています。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color TRANSPARENT = Color.fromString("transparent");
   {{< /tab >}}
@@ -143,7 +143,7 @@ private val TRANSPARENT = Color.fromString("transparent")
 
 レスポンスが正しく解析され、有効なColorオブジェクトに変換されることを認識して、要素を安全にクエリしてその色/背景色を取得できるようになりました。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 Color loginButtonColour = Color.fromString(driver.findElement(By.id("login")).getCssValue("color"));
 
@@ -174,7 +174,7 @@ val loginButtonBackgroundColour = Color.fromString(driver.findElement(By.id("log
 
 そして、色オブジェクトを直接比較できます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 assert loginButtonBackgroundColour.equals(HOTPINK);
   {{< /tab >}}
@@ -197,7 +197,7 @@ assert(loginButtonBackgroundColour.equals(HOTPINK))
 
 または、色を次の形式のいずれかに変換し、静的に検証することができます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 assert loginButtonBackgroundColour.asHex().equals("#ff69b4");
 assert loginButtonBackgroundColour.asRgba().equals("rgba(255, 105, 180, 1)");

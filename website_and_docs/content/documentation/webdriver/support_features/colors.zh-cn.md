@@ -16,7 +16,7 @@ aliases: [
 
 首先, 您需要导入该类:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.support.Color;
   {{< /tab >}}
@@ -37,7 +37,7 @@ include Selenium::WebDriver::Support
 
 您现在可以开始创建颜色对象. 每个颜色对象都需要使用您颜色的字符串定义来创建. 支持的颜色定义如下:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color HEX_COLOUR = Color.fromString("#2F7ED8");
 private final Color RGB_COLOUR = Color.fromString("rgb(255, 255, 255)");
@@ -85,7 +85,7 @@ private val HSLA_COLOUR = Color.fromString("hsla(100, 0%, 50%, 0.5)")
 Color类还支持在以下网址中指定的所有基本颜色定义
 [http://www.w3.org/TR/css3-color/#html4](//www.w3.org/TR/css3-color/#html4).
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color BLACK = Color.fromString("black");
 private final Color CHOCOLATE = Color.fromString("chocolate");
@@ -116,7 +116,7 @@ private val HOTPINK = Color.fromString("hotpink")
 
 如果元素上未设置颜色, 则有时浏览器会返回“透明”的颜色值. Color类也支持此功能:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color TRANSPARENT = Color.fromString("transparent");
   {{< /tab >}}
@@ -139,7 +139,7 @@ private val TRANSPARENT = Color.fromString("transparent")
 
 现在, 您可以安全地查询元素以获取其颜色/背景色, 任何响应都将被正确解析并转换为有效的Color对象:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 Color loginButtonColour = Color.fromString(driver.findElement(By.id("login")).getCssValue("color"));
 
@@ -171,7 +171,7 @@ val loginButtonBackgroundColour = Color.fromString(driver.findElement(By.id("log
 然后, 您可以直接比较颜色对象:
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 assert loginButtonBackgroundColour.equals(HOTPINK);
   {{< /tab >}}
@@ -194,7 +194,7 @@ assert(loginButtonBackgroundColour.equals(HOTPINK))
 
 或者, 您可以将颜色转换为以下格式之一并执行静态验证:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 assert loginButtonBackgroundColour.asHex().equals("#ff69b4");
 assert loginButtonBackgroundColour.asRgba().equals("rgba(255, 105, 180, 1)");

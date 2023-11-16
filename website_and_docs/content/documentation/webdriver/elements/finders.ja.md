@@ -39,7 +39,7 @@ Seleniumは、要素を一意に識別するための多数の組み込み[ロ�
 この値は保存して、将来の要素アクションに使用できます。 
 上記のHTMLの例では、クラス名が "tomatoes" の要素が2つあるため、このメソッドは "vegetables" リストの要素を返します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 WebElement vegetable = driver.findElement(By.className("tomatoes"));
   {{< /tab >}}
@@ -68,7 +68,7 @@ DOM全体で一意のロケーターを見つけるのではなく、検索を�
 
 1つの解決策は、目的の要素の祖先であり、不要な要素の祖先ではない一意の属性を持つ要素を見つけて、そのオブジェクトでfind要素を呼び出すことです。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 WebElement fruits = driver.findElement(By.id("fruits"));
 WebElement fruit = fruits.findElement(By.className("tomatoes"));
@@ -111,7 +111,7 @@ val fruit = fruits.findElement(By.className("tomatoes"))
 
 この例では、CSSセレクターを使用します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 WebElement fruit = driver.findElement(By.cssSelector("#fruits .tomatoes"));
   {{< /tab >}}
@@ -140,7 +140,7 @@ val fruit = driver.findElement(By.cssSelector("#fruits .tomatoes"))
 一致するものがない場合は、空のリストが返されます。 
 この場合、すべてのfruitsとvegetableのリストアイテムへの参照がコレクションに返されます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 List<WebElement> plants = driver.findElements(By.tagName("li"));
   {{< /tab >}}
@@ -165,7 +165,7 @@ val plants: List<WebElement> = driver.findElements(By.tagName("li"))
 多くの場合、要素のコレクションを取得しますが、特定の要素を操作したいので、コレクションを繰り返し処理して、
 必要な要素を特定する必要があります。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 List<WebElement> elements = driver.findElements(By.tagName("li"));
 
@@ -275,7 +275,7 @@ fun main() {
 これは、親要素のコンテキスト内で一致する子のWebElementのリストを見つけるために利用されます。 
 これを実現するために、親WebElementは'findElements'と連鎖して子要素にアクセスします。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
   import org.openqa.selenium.By;
   import org.openqa.selenium.WebDriver;
@@ -413,7 +413,7 @@ namespace FindElementsFromElement {
 
 これは、現在のブラウジングコンテキストでフォーカスを持っているDOM要素を追跡（または）検索するために使用されます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
   import org.openqa.selenium.*;
   import org.openqa.selenium.chrome.ChromeDriver;

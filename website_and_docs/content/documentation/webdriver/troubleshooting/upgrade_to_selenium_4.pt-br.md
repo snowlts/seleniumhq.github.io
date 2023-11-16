@@ -53,7 +53,7 @@ Por exemplo, se o seu fornecedor de nuvem usa os recursos `build` e `name` para 
 envolvê-los em um bloco `cloud: options` (verifique com seu fornecedor de nuvem o prefixo apropriado).
 
 #### Antes 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 DesiredCapabilities caps = DesiredCapabilities.firefox();
 caps.setCapability("platform", "Windows 10");
@@ -99,7 +99,7 @@ driver = webdriver.Remote(cloud_url, desired_capabilities=caps)
 {{< /tabpane >}}
 
 #### Depois
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 FirefoxOptions browserOptions = new FirefoxOptions();
 browserOptions.setPlatformName("Windows 10");

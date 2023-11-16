@@ -12,7 +12,7 @@ aliases: [
 WebDriver 没有区分窗口和标签页。如果你的站点打开了一个新标签页或窗口，Selenium 将允许您使用窗口句柄来处理它。
 每个窗口都有一个唯一的标识符，该标识符在单个会话中保持持久性。你可以使用以下方法获得当前窗口的窗口句柄:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.getWindowHandle();{{< /tab >}}
 {{< tab header="Python" >}}driver.current_window_handle{{< /tab >}}
 {{< tab header="CSharp" >}}driver.CurrentWindowHandle;{{< /tab >}}
@@ -32,7 +32,7 @@ WebDriver 没有区分窗口和标签页。如果你的站点打开了一个新�
 不过，Selenium 4 提供了一个新的 api [NewWindow](#创建新窗口或新标签页并且切换)
 它创建一个新选项卡 (或) 新窗口并自动切换到它。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 存储原始窗口的 ID
 String originalWindow = driver.getWindowHandle();
@@ -196,7 +196,7 @@ wait.until(titleIs("Selenium documentation"))
 
 _注意: 该特性适用于 Selenium 4 及其后续版本。_
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 打开新标签页并切换到新标签页
 driver.switchTo().newWindow(WindowType.TAB);
@@ -250,7 +250,7 @@ driver.switchTo().newWindow(WindowType.WINDOW)
 当你完成了一个窗口或标签页的工作时，_并且_它不是浏览器中最后一个打开的窗口或标签页时，你应该关闭它并切换回你之前使用的窗口。
 假设您遵循了前一节中的代码示例，您将把前一个窗口句柄存储在一个变量中。把这些放在一起，你会得到:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 //关闭标签页或窗口
 driver.close();
@@ -302,7 +302,7 @@ driver.switchTo().window(originalWindow)
 ### 在会话结束时退出浏览器
 
 当你完成了浏览器会话，你应该调用 quit 退出，而不是 close 关闭:
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.quit();{{< /tab >}}
 {{< tab header="Python" >}}driver.quit(){{< /tab >}}
 {{< tab header="CSharp" >}}driver.Quit();{{< /tab >}}
@@ -321,7 +321,7 @@ driver.switchTo().window(originalWindow)
 
 有的测试框架提供了一些方法和注释，您可以在测试结束时放入 teardown() 方法中。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 /**
 * 使用 JUnit 的例子
@@ -379,7 +379,7 @@ fun tearDown() {
 如果不在测试上下文中运行 WebDriver，您可以考虑使用 `try / finally`，这是大多数语言都提供的，
 这样一个异常处理仍然可以清理 WebDriver 会话。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 try {
     //WebDriver 代码…
@@ -430,7 +430,7 @@ with webdriver.Firefox() as driver:
 ### 获取窗口大小
 获取浏览器窗口的大小(以像素为单位)。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 分别获取每个尺寸
 int width = driver.manage().window().getSize().getWidth();
@@ -495,7 +495,7 @@ val height1 = size.height
 ### 设置窗口大小
 
 恢复窗口并设置窗口大小。
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.manage().window().setSize(new Dimension(1024, 768));{{< /tab >}}
 {{< tab header="Python" >}}driver.set_window_size(1024, 768){{< /tab >}}
 {{< tab header="CSharp" >}}driver.Manage().Window.Size = new Size(1024, 768);{{< /tab >}}
@@ -508,7 +508,7 @@ val height1 = size.height
 
 获取浏览器窗口左上角的坐标。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 分别获取每个尺寸
 int x = driver.manage().window().getPosition().getX();
@@ -575,7 +575,7 @@ val y1 = position.y
 
 将窗口移动到设定的位置。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 将窗口移动到主显示器的左上角
 driver.manage().window().setPosition(new Point(0, 0));
@@ -605,7 +605,7 @@ driver.manage().window().position = Point(0,0)
 
 扩大窗口。对于大多数操作系统，窗口将填满屏幕，而不会阻挡操作系统自己的菜单和工具栏。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.manage().window().maximize();{{< /tab >}}
 {{< tab header="Python" >}}driver.maximize_window(){{< /tab >}}
 {{< tab header="CSharp" >}}driver.Manage().Window.Maximize();{{< /tab >}}
@@ -622,7 +622,7 @@ driver.manage().window().position = Point(0,0)
 
 __注意: 此功能适用于Selenium 4以及更高版本.__
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.manage().window().minimize();{{< /tab >}}
 {{< tab header="Python" >}}driver.minimize_window(){{< /tab >}}
 {{< tab header="CSharp" >}}driver.Manage().Window.Minimize();{{< /tab >}}
@@ -635,7 +635,7 @@ __注意: 此功能适用于Selenium 4以及更高版本.__
 
 填充整个屏幕，类似于在大多数浏览器中按下 F11。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.manage().window().fullscreen();{{< /tab >}}
 {{< tab header="Python" >}}driver.fullscreen_window(){{< /tab >}}
 {{< tab header="CSharp" >}}driver.Manage().Window.FullScreen();{{< /tab >}}
@@ -651,7 +651,7 @@ WebDriver端点
 [屏幕截图](https://www.w3.org/TR/webdriver/#dfn-take-screenshot)
 返回以Base64格式编码的屏幕截图.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -742,7 +742,7 @@ WebDriver端点
 [屏幕截图](https://www.w3.org/TR/webdriver/#take-element-screenshot)
 返回以Base64格式编码的屏幕截图.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -844,7 +844,7 @@ driver.quit()
 
 在当前frame或者窗口的上下文中，执行JavaScript代码片段.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 //Creating the JavascriptExecutor interface object by Type casting
 JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -914,7 +914,7 @@ driver.executeScript("alert('hello world')")
 _注意: 此功能需要无头模式下的Chromium浏览器_
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 import org.openqa.selenium.print.PrintOptions;
 

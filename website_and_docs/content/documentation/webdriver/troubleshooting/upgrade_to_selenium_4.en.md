@@ -54,7 +54,7 @@ For example, if your cloud vendor uses `build` and `name` capabilities for your 
 to wrap them in a `cloud:options` block (check with your cloud vendor for the appropriate prefix).
 
 #### Before 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
 {{< tab header="Java" >}}
 DesiredCapabilities caps = DesiredCapabilities.firefox();
@@ -101,7 +101,7 @@ driver = webdriver.Remote(cloud_url, desired_capabilities=caps)
 {{< /tabpane >}}
 
 #### After
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
 {{< tab header="Java" >}}
 FirefoxOptions browserOptions = new FirefoxOptions();

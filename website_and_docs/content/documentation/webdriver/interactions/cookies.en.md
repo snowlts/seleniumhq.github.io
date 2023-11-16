@@ -25,7 +25,7 @@ you start interacting with a site and your homepage is large / takes a while to 
 an alternative is to find a smaller page on the site (typically the 404 page is small, 
 e.g. http://example.com/some404page)
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.*;
@@ -114,7 +114,7 @@ fun main() {
 
 It returns the serialized cookie data matching with the cookie name among all associated cookies.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.*;
@@ -215,7 +215,7 @@ fun main() {
 It returns a ‘successful serialized cookie data’ for current browsing context. 
 If browser is no longer available it returns error. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.*;
@@ -321,7 +321,7 @@ fun main() {
 
 It deletes the cookie data matching with the provided cookie name.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.*;
@@ -437,7 +437,7 @@ fun main() {
 
 It deletes all the cookies of the current browsing context.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.*;
@@ -553,7 +553,7 @@ request initiated by third party website.
 **Note**: **As of now this feature is landed in chrome(80+version), 
 Firefox(79+version) and works with Selenium 4 and later versions.**
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.*;

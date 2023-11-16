@@ -29,7 +29,7 @@ ver o seguinte:
 Se não fosse pelo iframe, esperaríamos clicar no botão
 usando algo como:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //This won't work
 driver.findElement(By.tagName("button")).click();
@@ -68,7 +68,7 @@ um frame.
 Alternar usando um WebElement é a opção mais flexível. Você pode
 encontrar o quadro usando seu seletor preferido e mudar para ele.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Store the web element
 WebElement iframe = driver.findElement(By.cssSelector("#modal>iframe"));
@@ -136,7 +136,7 @@ Se o seu frame ou iframe tiver um atributo id ou name, ele pode ser
 usado alternativamente. Se o name ou ID não for exclusivo na página, o
 primeiro encontrado será utilizado.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Using the ID
 driver.switchTo().frame("buttonframe");
@@ -198,7 +198,7 @@ driver.findElement(By.tagName("button")).click()
 Também é possível usar o índice do frame, podendo ser
 consultado usando _window.frames_ em JavaScript.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Switches to the second frame
 driver.switchTo().frame(1);
@@ -234,7 +234,7 @@ driver.switchTo().frame(1)
 Para deixar um iframe ou frameset, volte para o conteúdo padrão
 como a seguir:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Return to the top level
 driver.switchTo().defaultContent();

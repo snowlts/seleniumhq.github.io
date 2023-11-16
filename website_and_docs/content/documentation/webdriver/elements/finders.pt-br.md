@@ -40,7 +40,7 @@ retorna uma referência ao primeiro elemento no DOM que corresponde ao localizad
 Esse valor pode ser guardado e usado para ações futuras do elemento. Em nosso exemplo HTML acima, existem
 dois elementos que têm um nome de classe de "tomatoes" então este método retornará o elemento na lista "vegetables".
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 WebElement vegetable = driver.findElement(By.className("tomatoes"));
   {{< /tab >}}
@@ -70,7 +70,7 @@ já localizado. No exemplo acima existem dois elementos com um nome de classe de
 Uma possível solução seria localizar um elemento com um atributo único que seja um ancestral do elemento desejado e não um
 ancestral do elemento indesejado, então invoque o find element nesse objeto:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 WebElement fruits = driver.findElement(By.id("fruits"));
 WebElement fruit = fruits.findElement(By.className("tomatoes"));
@@ -115,7 +115,7 @@ Veja as [sugestões de estratégia do localizador]({{< ref "/documentation/test_
 
 Para esse exemplo, utilizaremos o CSS Selector:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 WebElement fruit = driver.findElement(By.cssSelector("#fruits .tomatoes"));
   {{< /tab >}}
@@ -143,7 +143,7 @@ do que apenas o primeiro. Os métodos plurais find elements retornam uma coleç�
 Se não houver correspondências, uma lista vazia será retornada. Nesse caso,
 referências a todos os itens da lista de frutas e vegetais serão devolvidas em uma coleção.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 List<WebElement> plants = driver.findElements(By.tagName("li"));
   {{< /tab >}}
@@ -169,7 +169,7 @@ Muitas vezes você obterá uma coleção de elementos, mas quer trabalhar apenas
 precisa iterar sobre a coleção e identificar o que você deseja.
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 List<WebElement> elements = driver.findElements(By.tagName("li"));
 
@@ -279,7 +279,7 @@ fun main() {
 Ele é usado para localizar a lista de WebElements filhos correspondentes dentro do contexto do elemento pai.
 Para realizar isso, o WebElement pai é encadeado com o 'findElements' para acessar seus elementos filhos.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
   import org.openqa.selenium.By;
   import org.openqa.selenium.WebDriver;
@@ -417,7 +417,7 @@ namespace FindElementsFromElement {
 
 Ele é usado para rastrear (ou) encontrar um elemento DOM que tem o foco no contexto de navegação atual.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
   import org.openqa.selenium.*;
   import org.openqa.selenium.chrome.ChromeDriver;

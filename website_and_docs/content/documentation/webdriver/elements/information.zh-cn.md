@@ -18,7 +18,7 @@ description: >
 因此，Selenium不能期望驱动程序直接实现这种功能，现在依赖于直接执行大量JavaScript函数。
 这个函数对一个元素的性质和在树中的关系做了许多近似的判断，以返回一个值。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // Navigate to the url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -65,7 +65,7 @@ val = driver.find_element(name: 'email_input').displayed?
 此方法用于检查所连接的元素在网页上是启用还是禁用状态。
 返回一个布尔值，如果在当前浏览上下文中是 **启用** 状态，则返回 **true**，否则返回 **false**。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
   //navigates to url
   driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -115,7 +115,7 @@ ele = driver.find_element(name: 'button_input').enabled?
 
 该方法返回一个布尔值，如果在当前浏览上下文中 **选择了** 引用的元素，则返回 **True**，否则返回 **False**。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
  //navigates to url
  driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -160,7 +160,7 @@ ele = driver.find_element(name: "checkbox_input").selected?
 
 此方法用于获取在当前浏览上下文中具有焦点的被引用元素的[TagName](https://www.w3.org/TR/webdriver/#dfn-get-element-tag-name)。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
  //navigates to url
  driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -211,7 +211,7 @@ attr = driver.find_element(name: "email_input").tag_name
 * 元素的高度
 * 元素的宽度
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Navigate to url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -266,7 +266,7 @@ println(res.getX())
 获取当前浏览上下文中元素的特定计算样式属性的值。
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 
 // Navigate to Url
@@ -323,7 +323,7 @@ val cssValue = driver.findElement(By.id("namedColor")).getCssValue("background-c
 获取特定元素渲染后的文本内容。
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Navigate to url
 driver.get("https://www.selenium.dev/selenium/web/linked_image.html");
@@ -369,7 +369,7 @@ val text = driver.findElement(By.id("justanotherlink")).getText()
 获取与 DOM 属性关联的运行时的值。
 它返回与该元素的 DOM 特性或属性关联的数据。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Navigate to the url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");

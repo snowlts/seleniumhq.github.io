@@ -40,8 +40,8 @@ If the center of the element is [obscured](https://w3c.github.io/webdriver/#dfn-
 Selenium will return an [element click intercepted](https://w3c.github.io/webdriver/#dfn-element-click-intercepted) error.
 
 
-{{< tabpane langEqualsHeader=true >}}
-{{< tab header="Java"  text=true >}}
+{{< tabpane >}}
+{{< tab header="Java" text=true >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/elements/InteractionTest.java#L18-L22" >}}
 {{< /tab >}}
   {{< tab header="Python" >}}
@@ -101,8 +101,9 @@ with a `content-editable` attribute. If it is not editable,
 [Here](https://www.w3.org/TR/webdriver/#keyboard-actions) is the list of
 possible keystrokes that WebDriver Supports.
 
-{{< tabpane langEqualsHeader=true >}}
-{{< tab header="Java"  text=true >}}
+{{< tabpane >}}
+{{< badge-examples >}}
+{{< tab header="Java" text=true >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/elements/InteractionTest.java#L27-L32" >}}
 {{< /tab >}}
 
@@ -180,7 +181,8 @@ this means an element is an input element of a form with a `text` type or an ele
 with a`content-editable` attribute. If these conditions are not met,
 [an invalid element state](https://w3c.github.io/webdriver/#dfn-invalid-element-state) error is returned.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
+{{< badge-examples >}}
 {{< tab header="Java" text=true >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/elements/InteractionTest.java#L38-L40" >}}
 {{< /tab >}}

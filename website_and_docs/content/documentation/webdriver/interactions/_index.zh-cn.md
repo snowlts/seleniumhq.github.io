@@ -15,7 +15,7 @@ aliases: [
 
 从浏览器中读取当前页面的标题:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.getTitle();{{< /tab >}}
 {{< tab header="Python" >}}driver.title{{< /tab >}}
 {{< tab header="CSharp" >}}driver.Title;{{< /tab >}}
@@ -28,7 +28,7 @@ aliases: [
 
 您可以从浏览器的地址栏读取当前的 URL，使用:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.getCurrentUrl();{{< /tab >}}
 {{< tab header="Python" >}}driver.current_url{{< /tab >}}
 {{< tab header="CSharp" >}}driver.Url;{{< /tab >}}

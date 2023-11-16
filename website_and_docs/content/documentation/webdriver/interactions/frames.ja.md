@@ -24,7 +24,7 @@ iFrame内のボタンがある場合を考えてみましょう。ブラウザ�
 
 iFrameがなければ、次のようなボタンを使用してボタンをクリックします。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //This won't work
 driver.findElement(By.tagName("button")).click();
@@ -60,7 +60,7 @@ WebDriverは、Frameに切り替える3つの方法を提供します。
 
 WebElementを使用した切り替えは、最も柔軟なオプションです。好みのセレクタを使用してFrameを見つけ、それに切り替えることができます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Store the web element
 WebElement iframe = driver.findElement(By.cssSelector("#modal>iframe"));
@@ -128,7 +128,7 @@ driver.findElement(By.tagName("button")).click()
 FrameまたはiFrameにidまたはname属性がある場合、代わりにこれを使うことができます。
 名前またはIDがページ上で一意でない場合、最初に見つかったものに切り替えます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Using the ID
 driver.switchTo().frame("buttonframe");
@@ -189,7 +189,7 @@ driver.findElement(By.tagName("button")).click()
 
 JavaScriptの _window.frames_ を使用して照会できるように、Frameのインデックスを使用することもできます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Switches to the second frame
 driver.switchTo().frame(1);
@@ -224,7 +224,7 @@ driver.switchTo().frame(1)
 
 iFrameまたはFrameセットを終了するには、次のようにデフォルトのコンテンツに切り替えます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Return to the top level
 driver.switchTo().defaultContent();

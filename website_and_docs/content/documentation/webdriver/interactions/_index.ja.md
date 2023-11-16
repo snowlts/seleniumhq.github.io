@@ -15,7 +15,7 @@ aliases: [
 
 ブラウザーから現在のページタイトルを読むことができます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.getTitle();{{< /tab >}}
   {{< tab header="Python" >}}driver.title{{< /tab >}}
   {{< tab header="CSharp" >}}driver.Title;{{< /tab >}}
@@ -29,7 +29,7 @@ aliases: [
 
 ブラウザーのアドレスバーから現在のURLを読むには、次を使用します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}driver.getCurrentUrl();{{< /tab >}}
 {{< tab header="Python" >}}driver.current_url{{< /tab >}}
 {{< tab header="CSharp" >}}driver.Url;{{< /tab >}}

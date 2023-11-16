@@ -24,7 +24,7 @@ aliases: [
 
 如果不是 iframe，我们可能会使用如下方式点击按钮:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 这不会工作
 driver.findElement(By.tagName("button")).click();
@@ -59,7 +59,7 @@ driver.findElement(By.tagName("button")).click()
 
 使用 WebElement 进行切换是最灵活的选择。您可以使用首选的选择器找到框架并切换到它。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 存储网页元素
 WebElement iframe = driver.findElement(By.cssSelector("#modal>iframe"));
@@ -127,7 +127,7 @@ driver.findElement(By.tagName("button")).click()
 如果您的 frame 或 iframe 具有 id 或 name 属性，则可以使用该属性。如果名称或 id 在页面上不是唯一的，
 那么将切换到找到的第一个。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 使用 ID
 driver.switchTo().frame("buttonframe");
@@ -190,7 +190,7 @@ driver.findElement(By.tagName("button")).click()
 例如可以使用JavaScript中的
 _window.frames_ 进行查询.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 切换到第 2 个框架
 driver.switchTo().frame(1);
@@ -225,7 +225,7 @@ driver.switchTo().frame(1)
 
 离开 iframe 或 frameset，切换回默认内容，如下所示:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // 回到顶层
 driver.switchTo().defaultContent();

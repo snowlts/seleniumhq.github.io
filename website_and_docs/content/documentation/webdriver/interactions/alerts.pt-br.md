@@ -24,7 +24,7 @@ o botão OK. <a onclick="window.alert('Sample alert')"> Veja um exemplo de alert
 O WebDriver pode obter o texto do pop-up e aceitar ou dispensar esses
 alertas.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See an example alert")).click();
@@ -118,7 +118,7 @@ uma amostra de confirmação </a>.
 
 Este exemplo também mostra uma abordagem diferente para armazenar um alerta:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See a sample confirm")).click();
@@ -226,7 +226,7 @@ completamente o espaço de texto de exemplo. Pressionar o botão Cancelar não e
 Veja um exemplo de prompt </a>.
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See a sample prompt")).click();

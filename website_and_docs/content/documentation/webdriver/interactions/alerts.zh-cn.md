@@ -17,7 +17,7 @@ WebDriver提供了一个API, 用于处理JavaScript提供的三种类型的原�
 
 WebDriver可以从弹窗获取文本并接受或关闭这些警告.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See an example alert")).click();
@@ -109,7 +109,7 @@ alert.accept()
 
 此示例还呈现了警告的另一种实现:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See a sample confirm")).click();
@@ -214,7 +214,7 @@ alert.dismiss()
 查看样例提示框</a>.
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See a sample prompt")).click();

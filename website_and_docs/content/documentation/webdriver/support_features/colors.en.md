@@ -19,7 +19,7 @@ Worry not. There is a solution: the _Color_ class!
 
 First of all, you will need to import the class:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.support.Color;
@@ -44,7 +44,7 @@ Every colour object will need to be created from a string representation of
 your colour.
 Supported colour representations are:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 private final Color HEX_COLOUR = Color.fromString("#2F7ED8");
@@ -94,7 +94,7 @@ The Color class also supports all of the base colour definitions
 specified in
 [http://www.w3.org/TR/css3-color/#html4](//www.w3.org/TR/css3-color/#html4).
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 private final Color BLACK = Color.fromString("black");
@@ -128,7 +128,7 @@ Sometimes browsers will return a colour value of "transparent"
 if no colour has been set on an element.
 The Color class also supports this:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 private final Color TRANSPARENT = Color.fromString("transparent");
@@ -155,7 +155,7 @@ to get its colour/background colour knowing that
 any response will be correctly parsed
 and converted into a valid Color object:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 Color loginButtonColour = Color.fromString(driver.findElement(By.id("login")).getCssValue("color"));
@@ -188,7 +188,7 @@ val loginButtonBackgroundColour = Color.fromString(driver.findElement(By.id("log
 You can then directly compare colour objects:
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 assert loginButtonBackgroundColour.equals(HOTPINK);
@@ -213,7 +213,7 @@ assert(loginButtonBackgroundColour.equals(HOTPINK))
 Or you can convert the colour into one of the following formats
 and perform a static validation:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 assert loginButtonBackgroundColour.asHex().equals("#ff69b4");

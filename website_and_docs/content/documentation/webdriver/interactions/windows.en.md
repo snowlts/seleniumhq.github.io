@@ -17,7 +17,7 @@ using a window handle.  Each window has a unique identifier which remains
 persistent in a single session. You can get the window handle of the
 current window by using:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.getWindowHandle();{{< /tab >}}
   {{< tab header="Python" >}}driver.current_window_handle{{< /tab >}}
@@ -41,7 +41,7 @@ to the one which is not the original.
 However, Selenium 4 provides a new api [NewWindow](#create-new-window-or-new-tab-and-switch) 
 which creates a new tab (or) new window and automatically switches to it.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Store the ID of the original window
@@ -212,7 +212,7 @@ and switch to the one which is not the original.
 
 __Note: This feature works with Selenium 4 and later versions.__
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 // Opens a new tab and switches to new tab
@@ -270,7 +270,7 @@ back to the window you were using previously.  Assuming you followed the
 code sample in the previous section you will have the previous window
 handle stored in a variable. Put this together and you will get:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Close the tab or window
@@ -327,7 +327,7 @@ back to a valid window handle in order to continue execution.
 When you are finished with the browser session you should call quit,
 instead of close:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.quit();{{< /tab >}}
   {{< tab header="Python" >}}driver.quit(){{< /tab >}}
@@ -351,7 +351,7 @@ running on your machine which could cause you problems later.
 Some test frameworks offer methods and annotations which you can hook
 into to tear down at the end of a test.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 /**
@@ -413,7 +413,7 @@ If not running WebDriver in a test context, you may consider using
 `try  / finally` which is offered by most languages so that an exception
 will still clean up the WebDriver session.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 try {
@@ -477,7 +477,7 @@ window.
 ### Get window size
 Fetches the size of the browser window in pixels.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Access each dimension individually
@@ -543,7 +543,7 @@ val height1 = size.height
 ### Set window size
 
 Restores the window and sets the window size.
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.manage().window().setSize(new Dimension(1024, 768));{{< /tab >}}
   {{< tab header="Python" >}}driver.set_window_size(1024, 768){{< /tab >}}
@@ -557,7 +557,7 @@ Restores the window and sets the window size.
 
 Fetches the coordinates of the top left coordinate of the browser window.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 // Access each dimension individually
@@ -625,7 +625,7 @@ val y1 = position.y
 
 Moves the window to the chosen position.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 // Move the window to the top left of the primary monitor
@@ -657,7 +657,7 @@ Enlarges the window. For most operating systems, the window will fill
 the screen, without blocking the operating system's own menus and
 toolbars.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.manage().window().maximize();{{< /tab >}}
   {{< tab header="Python" >}}driver.maximize_window(){{< /tab >}}
@@ -676,7 +676,7 @@ Minimize Window typically hides the window in the system tray.
 
 __Note: This feature works with Selenium 4 and later versions.__
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.manage().window().minimize();{{< /tab >}}
   {{< tab header="Python" >}}driver.minimize_window(){{< /tab >}}
@@ -690,7 +690,7 @@ __Note: This feature works with Selenium 4 and later versions.__
 
 Fills the entire screen, similar to pressing F11 in most browsers.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.manage().window().fullscreen();{{< /tab >}}
   {{< tab header="Python" >}}driver.fullscreen_window(){{< /tab >}}
@@ -706,7 +706,7 @@ Used to capture screenshot for current browsing context.
 The WebDriver endpoint [screenshot](https://www.w3.org/TR/webdriver/#dfn-take-screenshot)
 returns screenshot which is encoded in Base64 format.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.apache.commons.io.FileUtils;
@@ -797,7 +797,7 @@ Used to capture screenshot of an element for current browsing context.
 The WebDriver endpoint [screenshot](https://www.w3.org/TR/webdriver/#take-element-screenshot)
 returns screenshot which is encoded in Base64 format.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 import org.apache.commons.io.FileUtils;
@@ -901,7 +901,7 @@ fun main() {
 Executes JavaScript code snippet in the
 current context of a selected frame or window.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
     //Creating the JavascriptExecutor interface object by Type casting
@@ -972,7 +972,7 @@ Prints the current page within the browser.
 _Note: This requires Chromium Browsers to be in headless mode_
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
     import org.openqa.selenium.print.PrintOptions;

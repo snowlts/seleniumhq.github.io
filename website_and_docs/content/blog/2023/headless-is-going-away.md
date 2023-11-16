@@ -42,7 +42,7 @@ Check more details about the [new headleass mode at the official Chrome blog](ht
 In short, users can add the headless mode they want to use through arguments in browser options.
 
 #### Before 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 ChromeOptions options = new ChromeOptions();
 options.setHeadless(true);
@@ -78,7 +78,7 @@ driver.quit()
 {{< /tabpane >}}
 
 #### After
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 ChromeOptions options = new ChromeOptions();
 options.addArguments("--headless=new");

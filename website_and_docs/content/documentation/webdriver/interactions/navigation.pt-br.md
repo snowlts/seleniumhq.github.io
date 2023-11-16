@@ -12,7 +12,7 @@ aliases: [
 A primeira coisa que você vai querer fazer depois de iniciar um navegador é
 abrir o seu site. Isso pode ser feito em uma única linha, utilize o seguinte comando:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Convenient
 driver.get("https://selenium.dev");
@@ -49,7 +49,7 @@ driver.navigate().to("https://selenium.dev")
 
 Pressionando o botão Voltar do navegador:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.navigate().back();{{< /tab >}}
   {{< tab header="Python" >}}driver.back(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Navigate().Back();{{< /tab >}}
@@ -61,7 +61,7 @@ Pressionando o botão Voltar do navegador:
 ## Avançar
 Pressionando o botão Avançar do navegador:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.navigate().forward();{{< /tab >}}
   {{< tab header="Python" >}}driver.forward(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Navigate().Forward();{{< /tab >}}
@@ -74,7 +74,7 @@ Pressionando o botão Avançar do navegador:
 
 Atualizando a página atual:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.navigate().refresh();{{< /tab >}}
   {{< tab header="Python" >}}driver.refresh(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Navigate().Refresh();{{< /tab >}}

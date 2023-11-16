@@ -24,7 +24,7 @@ executing a large JavaScript function directly.
 This function makes many approximations about an element's
 nature and relationship in the tree to return a value.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // Navigate to the url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -72,7 +72,7 @@ val = driver.find_element(name: 'email_input').displayed?
 ブール値を返し、現在のブラウジングコンテキストで接続されている要素が
 **有効（enabled）** になっている場合は **True** 、そうでない場合は **false** を返します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
   //navigates to url
   driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -123,7 +123,7 @@ ele = driver.find_element(name: 'button_input').enabled?
 
 ブール値を返し、現在のブラウジングコンテキストで参照された要素が **選択されている** 場合は **True** 、そうでない場合は **false** を返します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
  //navigates to url
  driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -169,7 +169,7 @@ ele = driver.find_element(name: "checkbox_input").selected?
 これは、現在のブラウジングコンテキストにフォーカスがある参照された要素の
 [TagName](https://www.w3.org/TR/webdriver/#dfn-get-element-tag-name) を取得するために使います。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
  //navigates to url
  driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -220,7 +220,7 @@ attr = driver.find_element(name: "email_input").tag_name
 * 要素の高さ
 * 要素の幅
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Navigate to url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -274,7 +274,7 @@ println(res.getX())
 
 現在のブラウジングコンテキスト内の要素の指定された計算したスタイル属性の値を取得します。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 
 // Navigate to Url
@@ -330,7 +330,7 @@ val cssValue = driver.findElement(By.id("namedColor")).getCssValue("background-c
 指定された要素のレンダリングされたテキストを取得します。
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Navigate to url
 driver.get("https://www.selenium.dev/selenium/web/linked_image.html");
@@ -377,7 +377,7 @@ Fetches the run time value associated with a
 DOM attribute. It returns the data associated 
 with the DOM attribute or property of the element. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Navigate to the url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");

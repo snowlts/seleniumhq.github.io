@@ -64,7 +64,7 @@ Selenium 4 移除了对遗留协议的支持,
 (请与您的云供应商联系以获取适当的前缀). 
 
 #### Before 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 DesiredCapabilities caps = DesiredCapabilities.firefox();
 caps.setCapability("platform", "Windows 10");
@@ -110,7 +110,7 @@ driver = webdriver.Remote(cloud_url, desired_capabilities=caps)
 {{< /tabpane >}}
 
 #### After
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 FirefoxOptions browserOptions = new FirefoxOptions();
 browserOptions.setPlatformName("Windows 10");

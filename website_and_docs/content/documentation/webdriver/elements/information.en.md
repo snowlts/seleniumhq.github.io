@@ -24,7 +24,7 @@ executing a large JavaScript function directly.
 This function makes many approximations about an element's 
 nature and relationship in the tree to return a value.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
 {{< tab header="Java" >}}
 // Navigate to the url
@@ -76,7 +76,7 @@ is enabled or disabled on a webpage.
 Returns a boolean value, **True** if the connected element is
 **enabled** in the current browsing context else returns **false**.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
   //navigates to url
@@ -130,7 +130,7 @@ Check boxes, radio buttons, input elements, and option elements.
 Returns a boolean value, **True** if referenced element is
 **selected** in the current browsing context else returns **false**.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
  //navigates to url
@@ -177,7 +177,7 @@ ele = driver.find_element(name: "checkbox_input").selected?
 It is used to fetch the [TagName](https://www.w3.org/TR/webdriver/#dfn-get-element-tag-name)
 of the referenced Element which has the focus in the current browsing context.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
  //navigates to url
@@ -230,7 +230,7 @@ The fetched data body contain the following details:
 * Height of the element
 * Width of the element
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 // Navigate to url
@@ -286,7 +286,7 @@ println(res.getX())
 Retrieves the value of specified computed style property
 of an element in the current browsing context.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 
@@ -342,7 +342,7 @@ val cssValue = driver.findElement(By.id("namedColor")).getCssValue("background-c
 
 Retrieves the rendered text of the specified element.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 // Navigate to url
@@ -392,7 +392,7 @@ Fetches the run time value associated with a
 DOM attribute. It returns the data associated 
 with the DOM attribute or property of the element. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Navigate to the url

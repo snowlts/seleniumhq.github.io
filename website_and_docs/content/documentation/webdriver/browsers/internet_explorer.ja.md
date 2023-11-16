@@ -27,7 +27,7 @@ Additional information about using Internet Explorer can be found on the
 
 Starting a Microsoft Edge browser in Internet Explorer Compatibility mode with basic defined options looks like this:
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#38-L41" >}}
 {{< /tab >}}
@@ -56,7 +56,7 @@ IE Driver will automatically locate Edge on your system.
 
 So, if IE is not on the system, you only need:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" text=true >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#46-L47" >}}
 {{< /tab >}}
@@ -88,7 +88,7 @@ Here are a few common use cases with different capabilities:
 
 環境によっては、ファイルアップロードダイアログを開くときにInternet Explorerがタイムアウトする場合があります。 IEDriverのデフォルトのタイムアウトは1000ミリ秒ですが、fileUploadDialogTimeout capabilityを使用してタイムアウトを増やすことができます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.waitForUploadDialogUpTo(Duration.ofSeconds(2));
@@ -140,7 +140,7 @@ InternetExplorerの実行中のすべてのインスタンスのキャッシュ�
 
 このケイパビリティは、ブール値をパラメーターとして受け入れます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.destructivelyEnsureCleanSession();
@@ -189,7 +189,7 @@ InternetExplorerドライバーは、ブラウザーのズームレベルが100�
 
 このケイパビリティは、ブール値をパラメーターとして受け入れます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.ignoreZoomSettings();
@@ -245,7 +245,7 @@ val driver = RemoteWebDriver(options)
 
 このケイパビリティは、ブール値をパラメーターとして受け入れます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.introduceFlakinessByIgnoringSecurityDomains();
@@ -292,7 +292,7 @@ val driver = RemoteWebDriver(options)
 
 このケイパビリティは、ブール値をパラメーターとして受け入れます。
  
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.setCapability("silent", true);
@@ -373,7 +373,7 @@ IE 7以降のバージョンで動作します。
 
 注：コマンドライン引数が機能するためには、 __forceCreateProcessApi__ を順番に有効にする必要があります。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -478,7 +478,7 @@ CreateProcess APIを使用してInternet Explorerを強制的に起動します�
 
 IE 8以降の場合、このオプションでは "TabProcGrowth" レジストリの値を0に設定する必要があります。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -584,7 +584,7 @@ direct where the logs will go. Logging output is ignored unless the user directs
 
 To change the logging output to save to a specific file:
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{% tab header="Java" %}}
 {{< badge-version version="4.10" >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#L53" >}}
@@ -614,7 +614,7 @@ Property value: String representing path to log file
 
 To change the logging output to display in the console as STDOUT:
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{% tab header="Java" %}}
 {{< badge-version version="4.10" >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#L67" >}}
@@ -645,7 +645,7 @@ Property value: `DriverService.LOG_STDOUT` or `DriverService.LOG_STDERR`
 There are 6 available log levels: `FATAL`, `ERROR`, `WARN`, `INFO`, `DEBUG`, and `TRACE`
 If logging output is specified, the default level is `FATAL`
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{% tab header="Java" %}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#L82" >}}
 **Note**: Java also allows setting log level by System Property:\
@@ -672,7 +672,7 @@ Property value: String representation of `InternetExplorerDriverLogLevel.DEBUG.t
 
 ### Supporting Files Path
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#L94" >}}
 **Note**: Java also allows setting log level by System Property:\

@@ -88,7 +88,7 @@ APIの呼び出しとデータベースとの対話は、ブラウザを開い�
 理想的には、1行のコードでこのセットアップフェーズに対処できます。
 これは、ブラウザーが起動する前に実行されます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Create a user who has read-only permissions--they can configure a unicorn,
 // but they do not have payment information set up, nor do they have
@@ -196,7 +196,7 @@ val accountPage = loginAs(user.getEmail(), user.getPassword())
 ユーザーが問題を解決しようとしているようにコードを書きたいと思います。
 これを実行する1つの方法を次に示します（前の例から継続）
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // The Unicorn is a top-level Object--it has attributes, which are set here. 
 // This only stores the values; it does not fill out any web forms or interact
@@ -300,7 +300,7 @@ unicornConfirmationPage = addUnicornPage.createUnicorn(sparkles)
 
 ユニコーンの設定が完了したら、ステップ3に進んで、ユニコーンが実際に機能することを確認する必要があります。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // The exists() method from UnicornConfirmationPage will take the Sparkles 
 // object--a specification of the attributes you want to see, and compare

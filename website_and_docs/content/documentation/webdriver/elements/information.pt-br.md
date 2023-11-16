@@ -25,7 +25,7 @@ executing a large JavaScript function directly.
 This function makes many approximations about an element's
 nature and relationship in the tree to return a value.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 // Navigate to the url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -73,7 +73,7 @@ is enabled or disabled on a webpage.
 Returns a boolean value, **True** if the connected element is
 **enabled** in the current browsing context else returns **false**.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
   //navigates to url
   driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -129,7 +129,7 @@ Retorna um valor booleano, **true** se o elemento referenciado for
 **selected** no contexto de navegação atual, caso contrário, retorna
 **false**.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
  //navigates to url
  driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -175,7 +175,7 @@ ele = driver.find_element(name: "checkbox_input").selected?
 É usado para buscar o [TagName](https://www.w3.org/TR/webdriver/#dfn-get-element-tag-name)
 do elemento referenciado que tem o foco no contexto de navegação atual.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
  //navigates to url
  driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -227,7 +227,7 @@ O corpo de dados buscado contém os seguintes detalhes:
 * Altura do elemento
 * Largura do elemento
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Navigate to url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");
@@ -282,7 +282,7 @@ println(res.getX())
 Recupera o valor da propriedade de estilo computado especificada
 de um elemento no contexto de navegação atual.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 
 // Navigate to Url
@@ -339,7 +339,7 @@ val cssValue = driver.findElement(By.id("namedColor")).getCssValue("background-c
 Recupera o texto renderizado do elemento especificado.
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Navigate to url
 driver.get("https://www.selenium.dev/selenium/web/linked_image.html");
@@ -386,7 +386,7 @@ Fetches the run time value associated with a
 DOM attribute. It returns the data associated 
 with the DOM attribute or property of the element. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Navigate to the url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html");

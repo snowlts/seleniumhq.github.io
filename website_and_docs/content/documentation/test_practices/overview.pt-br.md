@@ -126,7 +126,7 @@ clicando e aguardando o envio dos formulários, etc.
 Idealmente, você pode abordar esta fase de configuração em uma linha de código,
 que será executado antes que qualquer navegador seja iniciado:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Crie um usuário que tenha permissões somente leitura - eles podem configurar um unicórnio,
 // mas eles não têm informações de pagamento configuradas, nem têm
@@ -244,7 +244,7 @@ campos, menus suspensos, botões de opção ou formulários da web.
 Você deseja escrever seu código como o usuário tentando resolver seu problema.
 Aqui está uma maneira de fazer isso (continuando do exemplo anterior):
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // O Unicórnio é um objeto de nível superior - ele possui atributos, que são definidos aqui.
 // Isso armazena apenas os valores; não preenche formulários da web nem interage
@@ -348,7 +348,7 @@ unicornConfirmationPage = addUnicornPage.createUnicorn(sparkles)
 Agora que você configurou seu unicórnio,
 você precisa passar para a etapa 3: certifique-se de que realmente funcionou.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // O método exists() de UnicornConfirmationPage pegará o objeto
 // Sparkles - uma especificação dos atributos que você deseja ver e compará-los

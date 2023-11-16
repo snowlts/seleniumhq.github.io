@@ -11,7 +11,7 @@ aliases: [
 
 ブラウザーを起動した後に最初に行うことは、Webサイトを開くことです。これは1行で実現できます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Convenient
 driver.get("https://selenium.dev");
@@ -48,7 +48,7 @@ driver.navigate().to("https://selenium.dev")
 
 ブラウザーの戻るボタンを押す。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.navigate().back();{{< /tab >}}
   {{< tab header="Python" >}}driver.back(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Navigate().Back();{{< /tab >}}
@@ -61,7 +61,7 @@ driver.navigate().to("https://selenium.dev")
 
 ブラウザーの次へボタンを押す。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.navigate().forward();{{< /tab >}}
   {{< tab header="Python" >}}driver.forward(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Navigate().Forward();{{< /tab >}}
@@ -74,7 +74,7 @@ driver.navigate().to("https://selenium.dev")
 
 現在のページを更新する。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.navigate().refresh();{{< /tab >}}
   {{< tab header="Python" >}}driver.refresh(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Navigate().Refresh();{{< /tab >}}

@@ -126,7 +126,8 @@ clicking and waiting for the forms to be submitted, etc.
 Ideally, you can address this set-up phase in one line of code,
 which will execute before any browser is launched:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
+{{< badge-examples >}}
   {{< tab header="Java" >}}
 // Create a user who has read-only permissions--they can configure a unicorn,
 // but they do not have payment information set up, nor do they have
@@ -244,7 +245,8 @@ fields, drop-downs, radio buttons, or web forms.
 You want to write your code like the user trying to solve their problem.
 Here is one way of doing this (continuing from the previous example):
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
+{{< badge-examples >}}
   {{< tab header="Java" >}}
 // The Unicorn is a top-level Object--it has attributes, which are set here. 
 // This only stores the values; it does not fill out any web forms or interact
@@ -349,7 +351,8 @@ unicornConfirmationPage = addUnicornPage.createUnicorn(sparkles)
 Now that you have configured your unicorn,
 you need to move on to step 3: making sure it actually worked.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
+{{< badge-examples >}}
   {{< tab header="Java" >}}
 // The exists() method from UnicornConfirmationPage will take the Sparkles 
 // object--a specification of the attributes you want to see, and compare

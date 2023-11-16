@@ -27,7 +27,7 @@ Informação adicional sobre como usar o Internet Explorer pode ser encontrada n
 Este é um exemplo de como iniciar o navegador Microsoft Edge em modo compatibilidade Internet Explorer
 usando um conjunto de opções básicas:
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#38-L41" >}}
 {{< /tab >}}
@@ -57,7 +57,7 @@ o IE Driver irá encontrar e usar o Edge automaticamente.
 
 So, if IE is not on the system, you only need:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" text=true >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#46-L47" >}}
 {{< /tab >}}
@@ -91,7 +91,7 @@ Em alguns ambientes, o Internet Explorer pode expirar ao abrir a
 Caixa de Diálogo de upload de arquivo. O IEDriver tem um tempo limite padrão de 1000 ms, mas você
 pode aumentar o tempo limite usando o recurso fileUploadDialogTimeout.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.waitForUploadDialogUpTo(Duration.ofSeconds(2));
@@ -146,7 +146,7 @@ seja limpo antes de iniciar o navegador IE.
 
 Esse recurso aceita um valor booleano como parâmetro.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.destructivelyEnsureCleanSession();
@@ -196,7 +196,7 @@ pode ser desativado definindo _ignoreZoomSetting_ como _true_.
 
 Esse recurso aceita um valor booleano como parâmetro.
  
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.ignoreZoomSettings();
@@ -256,7 +256,7 @@ apenas um "melhor esforço" no suporte será dado.
 
 Esse recurso aceita um valor booleano como parâmetro.
  
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.introduceFlakinessByIgnoringSecurityDomains();
@@ -305,7 +305,7 @@ saída de diagnóstico do IEDriverServer.
 
 Esse recurso aceita um valor booleano como parâmetro.
  
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 InternetExplorerOptions options = new InternetExplorerOptions();
 options.setCapability("silent", true);
@@ -386,7 +386,7 @@ Esta opção é usada especificamente para solucionar problemas com complementos
 
 Nota: __forceCreateProcessApi__ deve ser habilitado para que os argumentos da linha de comando funcionem.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -494,7 +494,7 @@ usando a API CreateProcess. O valor padrão é falso.
 Para IE 8 e superior, esta opção requer que
 o valor de registro "TabProcGrowth" seja definido como 0.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -601,7 +601,7 @@ direct where the logs will go. Logging output is ignored unless the user directs
 
 To change the logging output to save to a specific file:
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{% tab header="Java" %}}
 {{< badge-version version="4.10" >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#L53" >}}
@@ -631,7 +631,7 @@ Property value: String representing path to log file
 
 To change the logging output to display in the console as STDOUT:
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{% tab header="Java" %}}
 {{< badge-version version="4.10" >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#L67" >}}
@@ -662,7 +662,7 @@ Property value: `DriverService.LOG_STDOUT` or `DriverService.LOG_STDERR`
 There are 6 available log levels: `FATAL`, `ERROR`, `WARN`, `INFO`, `DEBUG`, and `TRACE`
 If logging output is specified, the default level is `FATAL`
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{% tab header="Java" %}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#L82" >}}
 **Note**: Java also allows setting log level by System Property:\
@@ -689,7 +689,7 @@ Property value: String representation of `InternetExplorerDriverLogLevel.DEBUG.t
 
 ### Supporting Files Path
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/InternetExplorerTest.java#L94" >}}
 **Note**: Java also allows setting log level by System Property:\

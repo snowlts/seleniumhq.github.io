@@ -19,7 +19,7 @@ Não se preocupe. Existe uma solução: a classe _Color_!
 
 Em primeiro lugar, você precisará importar a classe:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.openqa.selenium.support.Color;
   {{< /tab >}}
@@ -43,7 +43,7 @@ Cada objeto de cor precisará ser criado a partir de uma representação de stri
 sua cor.
 As representações de cores com suporte são:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color HEX_COLOUR = Color.fromString("#2F7ED8");
 private final Color RGB_COLOUR = Color.fromString("rgb(255, 255, 255)");
@@ -92,7 +92,7 @@ A classe Color também suporta todas as definições de cores básicas
 especificadas em
 [http://www.w3.org/TR/css3-color/#html4](//www.w3.org/TR/css3-color/#html4).
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color BLACK = Color.fromString("black");
 private final Color CHOCOLATE = Color.fromString("chocolate");
@@ -125,7 +125,7 @@ private val HOTPINK = Color.fromString("hotpink")
 se nenhuma cor foi definida em um elemento.
 A classe Color também oferece suporte para isso:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 private final Color TRANSPARENT = Color.fromString("transparent");
   {{< /tab >}}
@@ -151,7 +151,7 @@ para obter sua cor / cor de fundo sabendo que
 qualquer resposta será analisada corretamente
 e convertido em um objeto Color válido:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 Color loginButtonColour = Color.fromString(driver.findElement(By.id("login")).getCssValue("color"));
 
@@ -183,7 +183,7 @@ val loginButtonBackgroundColour = Color.fromString(driver.findElement(By.id("log
 Você pode então comparar diretamente os objetos coloridos:
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 assert loginButtonBackgroundColour.equals(HOTPINK);
   {{< /tab >}}
@@ -207,7 +207,7 @@ assert(loginButtonBackgroundColour.equals(HOTPINK))
 Ou você pode converter a cor em um dos seguintes formatos
 e realizar uma validação estática:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 assert loginButtonBackgroundColour.asHex().equals("#ff69b4");
 assert loginButtonBackgroundColour.asRgba().equals("rgba(255, 105, 180, 1)");

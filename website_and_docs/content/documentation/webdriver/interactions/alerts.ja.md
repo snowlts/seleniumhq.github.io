@@ -20,7 +20,7 @@ WebDriverは、JavaScriptが提供する3種類のネイティブポップアッ
 
 WebDriverはポップアップからテキストを取得し、これらのアラートを受け入れるか、または閉じることができます。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See an example alert")).click();
@@ -113,7 +113,7 @@ alert.accept()
 
 この例は、アラートを保存する別の方法も示しています。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See a sample confirm")).click();
@@ -219,7 +219,7 @@ alert.dismiss()
 キャンセルボタンを押してもテキストは送信されません。
 <a onclick="window.prompt('What is your tool of choice?',navigator.appName)">サンプルプロンプトを参照してください</a>。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
 driver.findElement(By.linkText("See a sample prompt")).click();

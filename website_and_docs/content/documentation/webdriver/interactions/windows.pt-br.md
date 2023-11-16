@@ -16,7 +16,7 @@ seu site abre uma nova guia ou janela, o Selenium permitirá que você trabalhe
 usando um identificador. Cada janela tem um identificador único que permanece
 persistente em uma única sessão. Você pode pegar o identificador atual usando:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.getWindowHandle();{{< /tab >}}
   {{< tab header="Python" >}}driver.current_window_handle{{< /tab >}}
   {{< tab header="CSharp" >}}driver.CurrentWindowHandle;{{< /tab >}}
@@ -39,7 +39,7 @@ para aquela que não é o original.
 No entanto, o Selenium 4 fornece uma nova API [NewWindow](#criar-nova-janela-ou-nova-guia-e-alternar) 
 que cria uma nova guia (ou) nova janela e muda automaticamente para ela.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Store the ID of the original window
 String originalWindow = driver.getWindowHandle();
@@ -209,7 +209,7 @@ e mudar para aquela que não é a original.
 
 __Nota: este recurso funciona com Selenium 4 e versões posteriores.__
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Opens a new tab and switches to new tab
 driver.switchTo().newWindow(WindowType.TAB);
@@ -266,7 +266,7 @@ de volta para a janela que você estava usando anteriormente. Supondo que você 
 amostra de código na seção anterior, você terá o identificador da janela
 anterior armazenado em uma variável. Junte isso e você obterá:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Close the tab or window
 driver.close();
@@ -322,7 +322,7 @@ de volta para um identificador de janela válido para continuar a execução.
 Quando você terminar a sessão do navegador, você deve chamar a função _quit()_,
 em vez de fechar:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.quit();{{< /tab >}}
   {{< tab header="Python" >}}driver.quit(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Quit();{{< /tab >}}
@@ -343,7 +343,7 @@ rodando em sua máquina, o que pode causar problemas mais tarde.
 
 Algumas estruturas de teste oferecem métodos e anotações em que você pode ligar para derrubar no final de um teste.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 /**
  * Example using JUnit
@@ -404,7 +404,7 @@ Se não estiver executando o WebDriver em um contexto de teste, você pode consi
 `try/finally` que é oferecido pela maioria das linguagens para que uma exceção
 ainda limpe a sessão do WebDriver.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 try {
     //WebDriver code here...
@@ -466,7 +466,7 @@ WebDriver fornece mecanismos para mover e redimensionar a janela do navegador.
 ### Coletar o tamanho da janela
 Obtém o tamanho da janela do navegador em pixels.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 //Access each dimension individually
 int width = driver.manage().window().getSize().getWidth();
@@ -531,7 +531,7 @@ val height1 = size.height
 ### Definir o tamanho da janela
 
 Restaura a janela e define o tamanho da janela.
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.manage().window().setSize(new Dimension(1024, 768));{{< /tab >}}
   {{< tab header="Python" >}}driver.set_window_size(1024, 768){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Manage().Window.Size = new Size(1024, 768);{{< /tab >}}
@@ -544,7 +544,7 @@ Restaura a janela e define o tamanho da janela.
 
 Busca as coordenadas da coordenada superior esquerda da janela do navegador.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Access each dimension individually
 int x = driver.manage().window().getPosition().getX();
@@ -611,7 +611,7 @@ val y1 = position.y
 
 Move a janela para a posição escolhida.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Move the window to the top left of the primary monitor
 driver.manage().window().setPosition(new Point(0, 0));
@@ -642,7 +642,7 @@ Aumenta a janela. Para a maioria dos sistemas operacionais, a janela irá preenc
 a tela, sem bloquear os próprios menus do sistema operacional e
 barras de ferramentas.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.manage().window().maximize();{{< /tab >}}
   {{< tab header="Python" >}}driver.maximize_window(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Manage().Window.Maximize();{{< /tab >}}
@@ -660,7 +660,7 @@ Minimizar Janela normalmente oculta a janela na bandeja do sistema.
 
 __Nota: este recurso funciona com Selenium 4 e versões posteriores.__
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.manage().window().minimize();{{< /tab >}}
   {{< tab header="Python" >}}driver.minimize_window(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Manage().Window.Minimize();{{< /tab >}}
@@ -673,7 +673,7 @@ __Nota: este recurso funciona com Selenium 4 e versões posteriores.__
 
 Preenche a tela inteira, semelhante a pressionar F11 na maioria dos navegadores.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}driver.manage().window().fullscreen();{{< /tab >}}
   {{< tab header="Python" >}}driver.fullscreen_window(){{< /tab >}}
   {{< tab header="CSharp" >}}driver.Manage().Window.FullScreen();{{< /tab >}}
@@ -688,7 +688,7 @@ Usado para capturar a tela do contexto de navegação atual.
 O endpoint WebDriver [screenshot](https://www.w3.org/TR/webdriver/#dfn-take-screenshot)
 retorna a captura de tela codificada no formato Base64.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -779,7 +779,7 @@ Usado para capturar a imagem de um elemento para o contexto de navegação atual
 O endpoint WebDriver [screenshot](https://www.w3.org/TR/webdriver/#take-element-screenshot)
 retorna a captura de tela codificada no formato Base64.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -883,7 +883,7 @@ fun main() {
 Executa o snippet de código JavaScript no
 contexto atual de um frame ou janela selecionada.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     //Creating the JavascriptExecutor interface object by Type casting
       JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -952,7 +952,7 @@ Imprime a página atual dentro do navegador
 
 _Nota: isto requer que navegadores Chromium estejam no modo sem cabeçalho_
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     import org.openqa.selenium.print.PrintOptions;
 

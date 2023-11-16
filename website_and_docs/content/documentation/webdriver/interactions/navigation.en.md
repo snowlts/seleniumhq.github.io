@@ -13,7 +13,7 @@ aliases: [
 The first thing you will want to do after launching a browser is to
 open your website. This can be achieved in a single line:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Convenient
@@ -47,7 +47,7 @@ driver.navigate().to("https://selenium.dev")
 
 Pressing the browser's back button:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.navigate().back();{{< /tab >}}
   {{< tab header="Python" >}}driver.back(){{< /tab >}}
@@ -60,7 +60,7 @@ Pressing the browser's back button:
 ## Forward
 Pressing the browser's forward button:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.navigate().forward();{{< /tab >}}
   {{< tab header="Python" >}}driver.forward(){{< /tab >}}
@@ -74,7 +74,7 @@ Pressing the browser's forward button:
 
 Refresh the current page:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}driver.navigate().refresh();{{< /tab >}}
   {{< tab header="Python" >}}driver.refresh(){{< /tab >}}

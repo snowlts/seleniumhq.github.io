@@ -98,7 +98,7 @@ c) 如果失败，它不会给出一个简洁的、“可检查”的方法来�
 
 理想情况下，您可以在一行代码中处理这个设置阶段，这些代码将在任何浏览器启动之前执行:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // Create a user who has read-only permissions--they can configure a unicorn,
 // but they do not have payment information set up, nor do they have
@@ -209,7 +209,7 @@ val accountPage = loginAs(user.getEmail(), user.getPassword())
 您希望像尝试解决问题的用户一样编写代码。
 这是一种方法（从前面的例子继续）：
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // The Unicorn is a top-level Object--it has attributes, which are set here.
 // This only stores the values; it does not fill out any web forms or interact
@@ -314,7 +314,7 @@ unicornConfirmationPage = addUnicornPage.createUnicorn(sparkles)
 既然您已经配置好了独角兽，
 您需要进入第三步:确保它确实有效。
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // The exists() method from UnicornConfirmationPage will take the Sparkles
 // object--a specification of the attributes you want to see, and compare

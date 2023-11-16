@@ -28,7 +28,7 @@ other kinds of authentication credentials)
 In short, in Selenium 4, the process has become less
 complicated. Perhaps an example will help?
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
 // This "HasAuthentication" interface is the key!
 HasAuthentication authentication (HasAuthentication) driver;

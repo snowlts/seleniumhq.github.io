@@ -76,7 +76,7 @@ page. To understand and create locator we will use the following HTML snippet.
 The HTML page web element can have attribute class. We can see an example in the
 above shown HTML snippet. We can identify these elements using the class name locator
 available in Selenium. 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     WebDriver driver = new ChromeDriver();
 	driver.findElement(By.className("information"));
@@ -110,7 +110,7 @@ as css = #id. Otherwise the format we follow is css =[attribute=value] .
 Let us see an example from above HTML snippet. We will create locator for First Name 
 textbox, using css. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     WebDriver driver = new ChromeDriver();
 	driver.findElement(By.cssSelector("#fname"));
@@ -142,7 +142,7 @@ We can use the ID attribute available with element in a web page to locate it.
 Generally the ID property should be unique for a element on the web page. 
 We will identify the Last Name field using it. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     WebDriver driver = new ChromeDriver();
 	driver.findElement(By.id("lname"));
@@ -175,7 +175,7 @@ We can use the NAME attribute available with element in a web page to locate it.
 Generally the NAME property should be unique for a element on the web page. 
 We will identify the Newsletter checkbox using it. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     WebDriver driver = new ChromeDriver();
 	driver.findElement(By.name("newsletter"));
@@ -206,7 +206,7 @@ We will identify the Newsletter checkbox using it.
 If the element we want to locate is a link, we can use the link text locator
 to identify it on the web page. The link text is the text displayed of the link. 
 In the HTML snippet shared, we have a link available, lets see how will we locate it. 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     WebDriver driver = new ChromeDriver();
 	driver.findElement(By.linkText("Selenium Official Page"));
@@ -238,7 +238,7 @@ If the element we want to locate is a link, we can use the partial link text loc
 to identify it on the web page. The link text is the text displayed of the link. 
 We can pass partial text as value.
 In the HTML snippet shared, we have a link available, lets see how will we locate it. 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     WebDriver driver = new ChromeDriver();
 	driver.findElement(By.partialLinkText("Official Page"));
@@ -268,7 +268,7 @@ In the HTML snippet shared, we have a link available, lets see how will we locat
 ## tag name
 We can use the HTML TAG itself as a locator to identify the web element on the page.
 From the above HTML snippet shared, lets identify the link, using its html tag "a". 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     WebDriver driver = new ChromeDriver();
 	driver.findElement(By.tagName("a"));
@@ -304,7 +304,7 @@ Example - /html/form/input[1]. This will return the male radio button.
 Or the xpath could be relative. Example- //input[@name='fname']. This will return the
 first name text box. Let us create locator for female radio button using xpath. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
   {{< tab header="Java" >}}
     WebDriver driver = new ChromeDriver();
 	driver.findElement(By.xpath("//input[@value='f']"));
@@ -362,7 +362,7 @@ Let us consider the below example for understanding the relative locators.
 If the email text field element is not easily identifiable for some reason, but the password text field element is,
 we can locate the text field element using the fact that it is an "input" element "above" the password element. 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 By emailLocator = RelativeLocator.with(By.tagName("input")).above(By.id("password"));
 {{< /tab >}}
@@ -388,7 +388,7 @@ val emailLocator = RelativeLocator.with(By.tagName("input")).above(By.id("passwo
 If the password text field element is not easily identifiable for some reason, but the email text field element is,
 we can locate the text field element using the fact that it is an "input" element "below" the email element.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 By passwordLocator = RelativeLocator.with(By.tagName("input")).below(By.id("email"));
 {{< /tab >}}
@@ -414,7 +414,7 @@ val passwordLocator = RelativeLocator.with(By.tagName("input")).below(By.id("ema
 If the cancel button is not easily identifiable for some reason, but the submit button element is,
 we can locate the cancel button element using the fact that it is a "button" element to the "left of" the submit element.
     
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 By cancelLocator = RelativeLocator.with(By.tagName("button")).toLeftOf(By.id("submit"));
 {{< /tab >}}
@@ -440,7 +440,7 @@ val cancelLocator = RelativeLocator.with(By.tagName("button")).toLeftOf(By.id("s
 If the submit button is not easily identifiable for some reason, but the cancel button element is,
 we can locate the submit button element using the fact that it is a "button" element "to the right of" the cancel element.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 By submitLocator = RelativeLocator.with(By.tagName("button")).toRightOf(By.id("cancel"));
 {{< /tab >}}
@@ -468,7 +468,7 @@ identify an element that is at most `50px` away from the provided locator.
 One great use case for this is to work with a form element that doesn't have an easily constructed locator,
 but its associated [input label element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) does.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 By emailLocator = RelativeLocator.with(By.tagName("input")).near(By.id("lbl-email"));
 {{< /tab >}}
@@ -493,7 +493,7 @@ val emailLocator = RelativeLocator.with(By.tagName("input")).near(By.id("lbl-ema
 
 You can also chain locators if needed. Sometimes the element is most easily identified as being both above/below one element and right/left of another.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" >}}
 By submitLocator = RelativeLocator.with(By.tagName("button")).below(By.id("email")).toRightOf(By.id("cancel"));
 {{< /tab >}}

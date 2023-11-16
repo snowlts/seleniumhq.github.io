@@ -24,7 +24,7 @@ the OK button. <a onclick="window.alert('Sample alert')">See an example alert</a
 WebDriver can get the text from the popup and accept or dismiss these
 alerts.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
@@ -119,7 +119,7 @@ a sample confirm</a>.
 
 This example also shows a different approach to storing an alert:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert
@@ -228,7 +228,7 @@ text. Pressing the cancel button will not submit any text.
 See a sample prompt</a>.
 
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Click the link to activate the alert

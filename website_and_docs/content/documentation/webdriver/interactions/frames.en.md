@@ -29,7 +29,7 @@ see the following:
 If it was not for the iframe we would expect to click on the button
 using something like:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //This won't work
@@ -69,7 +69,7 @@ a frame.
 Switching using a WebElement is the most flexible option. You can
 find the frame using your preferred selector and switch to it.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Store the web element
@@ -138,7 +138,7 @@ If your frame or iframe has an id or name attribute, this can be used
 instead.  If the name or ID is not unique on the page, then the first
 one found will be switched to.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 //Using the ID
@@ -201,7 +201,7 @@ driver.findElement(By.tagName("button")).click()
 It is also possible to use the index of the frame, such as can be
 queried using _window.frames_ in JavaScript.
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 // Switches to the second frame
@@ -238,7 +238,7 @@ driver.switchTo().frame(1)
 To leave an iframe or frameset, switch back to the default content
 like so:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< badge-examples >}}
   {{< tab header="Java" >}}
 // Return to the top level

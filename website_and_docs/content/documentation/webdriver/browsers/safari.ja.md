@@ -24,7 +24,7 @@ Capabilities unique to Safari can be found at Apple's page [About WebDriver for 
 
 Starting a Safari session with basic defined options looks like this:
 
-{{< tabpane langEqualsHeader=true >}}
+{{< tabpane >}}
 {{< tab header="Java" text=true >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/browsers/SafariTest.java#24-L25" >}}
 {{< /tab >}}
@@ -59,7 +59,7 @@ Service settings common to all browsers are described on the [Service page]({{< 
 Unlike other browsers, Safari doesn't let you choose where logs are output, or change levels. The one option
 available is to turn logs off or on. If logs are toggled on, they can be found at:`~/Library/Logs/com.apple.WebDriver/`.
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{% tab header="Java" %}}
 {{< badge-version version="4.10" >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/SafariTest.java#L31" >}}
@@ -91,7 +91,7 @@ Property value: `"true"` or `"false"`
 Apple provides a development version of their browser — [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/)
 To use this version in your code:
 
-{{< tabpane text=true langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< badge-code >}}
 {{< /tab >}}
